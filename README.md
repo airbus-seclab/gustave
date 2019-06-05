@@ -61,7 +61,7 @@ effort.
 
 For now, we provide example Intel 440FX and PowerPC PREP boards with
 GUSTAVE integration. The implementation of your own board is really
-easy. Have a look at [x86 board](blob/master/hw/i386/fuzz/).
+easy. Have a look at [x86 board](https://github.com/airbus-seclab/qemu/blob/gustave/hw/i386/fuzz/afl.c).
 
 We also added support for x86 and PowerPC GUSTAVE instrumentation
 shims to **afl-gcc**.
