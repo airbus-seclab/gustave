@@ -55,13 +55,15 @@ GUSTAVE design choices implies the following differences:
 ### Hardware
 
 We have implemented and tested **Intel x86** and **PowerPC** support.
-The GUSTAVE implementation is architecture independent. If you can run
-your target with QEMU, you can fuzz it with GUSTAVE with little
-effort.
+The [GUSTAVE
+implementation](https://github.com/airbus-seclab/qemu/tree/gustave/hw/fuzz)
+is architecture independent. If you can run your target with QEMU, you
+can fuzz it with GUSTAVE with little effort.
 
 For now, we provide example Intel 440FX and PowerPC PREP boards with
 GUSTAVE integration. The implementation of your own board is really
-easy. Have a look at [x86 board](https://github.com/airbus-seclab/qemu/blob/gustave/hw/i386/fuzz/afl.c).
+easy. Have a look at [x86
+board](https://github.com/airbus-seclab/qemu/blob/gustave/hw/i386/fuzz/afl.c).
 
 We also added support for x86 and PowerPC GUSTAVE instrumentation
 shims to **afl-gcc**.
