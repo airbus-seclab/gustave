@@ -66,7 +66,7 @@ easy. Have a look at [x86
 board](https://github.com/airbus-seclab/qemu/blob/gustave/hw/i386/fuzz/afl.c).
 
 We also added support for x86 and PowerPC GUSTAVE instrumentation
-shims to **afl-gcc**.
+shims to `afl-gcc`.
 
 
 ### Software
@@ -74,7 +74,7 @@ shims to **afl-gcc**.
 We also provide [POK](https://pok-kernel.github.io/) micro-kernel
 target specific developments:
 
-- system call ABI generator for both x86/PPC
+- system calls ABI generator for both x86/PPC
 - x86 memory oracles
 
 
