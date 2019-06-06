@@ -1,0 +1,23 @@
+{
+    "user-timeout": 10000,
+    "qemu-overhead": 10,
+    "vm-state-template": "/tmp/afl-vmstate.XXXXXX",
+    "afl-control-fd": 198,
+    "afl-status-fd": 199,
+    "afl-trace-size": 65536,
+    "afl-trace-env": "__AFL_SHM_ID",
+    "afl-trace-addr": 2147483648,
+    "vm-part-base": 2310144,
+    "vm-part-size": 1100000,
+    "vm-part-off": 79,
+    "vm-nop-size": 1048576,
+    "vm-fuzz-inj": 2310223,
+    "vm-size": 3477552,
+    "vm-part-kstack": 0,
+    "vm-part-kstack-size": 0,
+    "vm_fuzz_ep": 2310223,
+    "vm_fuzz_ep_next": 2310224,
+    "vm_panic": 1057584,
+    "vm_cswitch": 0,
+    "vm_cswitch_next": 0
+}
