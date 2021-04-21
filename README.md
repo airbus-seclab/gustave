@@ -101,4 +101,4 @@ $ git clone -b gustave https://github.com/airbus-seclab/qemu
 ## Publications
 
 Material from different talks on GUSTAVE can be found at
-https://airbus-seclab.github.io/: [Slides(en)](https://airbus-seclab.github.io/GUSTAVE_thcon/GUSTAVE_thcon.pdf) :gb:, [Slides(fr)](GUSTAVE_SSTIC/GUSTAVE_SSTIC_slides.pdf) :fr: [Paper](GUSTAVE_SSTIC/GUSTAVE_SSTIC_paper.pdf) :fr:, [Video](https://static.sstic.org/videos2019/1080p/SSTIC_2019-06-06_P05.mp4) :fr:
+https://airbus-seclab.github.io/: [Slides(en)](https://airbus-seclab.github.io/GUSTAVE_thcon/GUSTAVE_thcon.pdf) :gb:, [Slides(fr)](https://github.com/airbus-seclab/airbus-seclab.github.io/tree/master/GUSTAVE_SSTIC/GUSTAVE_SSTIC_slides.pdf) :fr: [Paper](https://github.com/airbus-seclab/airbus-seclab.github.io/tree/master/GUSTAVE_SSTIC/GUSTAVE_SSTIC_paper.pdf) :fr:, [Video](https://static.sstic.org/videos2019/1080p/SSTIC_2019-06-06_P05.mp4) :fr:
