@@ -1,0 +1,4 @@
+set architecture i386
+set pagination off
+set confirm off
+target remote :1234

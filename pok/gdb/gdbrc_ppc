@@ -1,0 +1,5 @@
+set architecture powerpc:7400
+set endian big
+set pagination off
+set confirm off
+target remote :1234

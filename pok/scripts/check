@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#
+# Check and fix AFL environment
+#
+
+error () {
+    echo -e "Error: $1";exit 1
+}
+
+afl_checks () {
+    ## [-] PROGRAM ABORT : Pipe at the beginning of 'core_pattern'
+    CORE="/proc/sys/kernel/core_pattern"
+    [ "$(cat $CORE)" != "core" ] && sudo sh -c "echo core > $CORE"
+
+    ## AFL Session directories check
+    [ -d "$AFL_IN" ]  || error "missing $AFL_IN"
+    [ -d "$AFL_OUT" ] || error "missing $AFL_OUT"
+
+    ## AFL start-up input file check
+    [ ! -z "$(ls "$AFL_IN")" ] || error "missing input file in $AFL_IN"
+}
+
+if [ ! -z $AFL_CHECKS ];then
+    afl_checks
+fi
+
+## Filter bitmap check
+bitmap=$(tr ',' '\n' < "$QJSON"  | grep vm-mem-ranges | cut -d':' -f2 | tr -d '" ')
+[ -f "$bitmap" ] || error "no filter bitmap: $bitmap"
+
+echo "If system does not run, check '/tmp/qemu.err.\$pid' for potential issue"

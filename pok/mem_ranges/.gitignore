@@ -1,0 +1,4 @@
+bitmap
+unlink_bitmap
+*.bitmap
+*.ranges
